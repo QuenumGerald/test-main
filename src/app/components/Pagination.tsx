@@ -4,8 +4,8 @@ type PaginationProps = {
   };
   
   const Pagination = ({ currentPage, onPageChange }: PaginationProps) => (
-    <div className="flex justify-center mt-4">
-      {/* Bouton Previous - Masqué si on est sur la première page */}
+    <div className="flex justify-end mt-4">
+
       {currentPage > 0 && (
         <button
           onClick={() => onPageChange(currentPage - 1)}
@@ -15,7 +15,7 @@ type PaginationProps = {
         </button>
       )}
       
-      {/* Bouton Next */}
+
       <button
         onClick={() => onPageChange(currentPage + 1)}
         className="px-4 py-2 bg-gray-200 rounded"

@@ -3,8 +3,8 @@ import "./globals.css";
 import { ReactNode } from "react";
 
 export const metadata: Metadata = {
-  title: "Poke APP - Collection de Pokémon",
-  description: "Explorez et collectionnez vos Pokémon préférés dans une application Next.js moderne.",
+  title: "Pokemon APP - Collection de Pokémon",
+  description: "Explorez et collectionnez vos Pokémon préférés.",
 };
 
 export default function RootLayout({
@@ -14,7 +14,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="fr">
-      <body className="bg-gray-100 text-gray-900 font-sans">
+      <body className="bg-gray-150 text-gray-900 font-sans">
         <header className="p-4 bg-white shadow-md">
           <nav className="container mx-auto flex justify-between">
             <h1 className="text-xl font-bold">Pokemon APP</h1>

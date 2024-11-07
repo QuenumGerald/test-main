@@ -25,10 +25,9 @@ export default function Browse() {
     collection.push(pokemon);
     localStorage.setItem("collection", JSON.stringify(collection));
 
-    // Afficher le message de confirmation
     setNotification(`${pokemon.name} ajouté à la collection!`);
 
-    // Supprimer le message après 3 secondes
+
     setTimeout(() => setNotification(null), 3000);
   };
 
